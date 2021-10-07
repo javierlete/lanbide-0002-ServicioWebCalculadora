@@ -26,7 +26,14 @@ namespace ServicioWebCalculadora
         [WebMethod]
         public int Restar(int a, int b)
         {
+            System.Threading.Thread.Sleep(5000);
             return a - b;
+        }
+
+        [WebMethod]
+        public int Multiplicar(int a, int b)
+        {
+            return a * b;
         }
     }
 }
